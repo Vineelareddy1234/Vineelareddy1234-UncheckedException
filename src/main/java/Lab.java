@@ -1,6 +1,11 @@
 
 public class Lab {
+    public static void main(String[] args){
+        Lab lab=new Lab();
+        lab.throwUncheckedException();
+    }
     /**
+     * 
      * This method must throw an unchecked exception.
      * unchecked means that you do not need to wrap the method in a try/catch or a throws declaration.
      * Unchecked exceptions may include situations like arithmetic errors like dividing by zero,
@@ -13,6 +18,8 @@ public class Lab {
      * event happens, like running out of computer memory.
      */
     public void throwUncheckedException(){
+        int result= 10/0;
+        System.out.println("Result is:"+result);
 
     }
 }
